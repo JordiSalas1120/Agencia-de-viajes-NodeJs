@@ -1,0 +1,21 @@
+# fly.toml file generated for agenciaviajes on 2023-03-07T21:23:32-04:00
+
+app = "agenciaviajes"
+kill_signal = "SIGINT"
+kill_timeout = 5
+processes = []
+
+[env]
+  DB_NAME =  "agenciadeviajes"
+  DB_USER = "root"
+
+[build]
+  image = "mysql:8"
+
+[experimental]
+  cmd = [
+    "--default-authentication-plugin", 
+    "mysql_native_password", 
+    "--datadir", 
+    "/data/mysql"
+  ]

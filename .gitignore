@@ -1,2 +1,9 @@
 .env
 node_modules/
+agenciadeviajes.sql
+.dockerignore
+Dockerfile
+testimoniales.csv
+text
+viajes.csv
+fly.toml
